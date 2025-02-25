@@ -8,10 +8,10 @@ terraform {
 }
 
 # Configure the AWS Provider
-provider "aws" {
-  region = "us-east-1"
-  profile    = "personal"
-}
+#provider "aws" {
+#  region = "us-east-1"
+ # profile    = "personal"
+#}
 
 locals {
   name   = "ex-${replace(basename(path.cwd), "_", "-")}"
